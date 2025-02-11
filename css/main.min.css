@@ -4773,6 +4773,11 @@ body {
   --wolf-size: 160px;
   --score-color: rgb(252, 98, 98);
 }
+@media (max-width: 576px) {
+  .game {
+    min-height: calc(var(--game-width) * 1.3);
+  }
+}
 .game.bright {
   transition: filter 0.5s ease-in-out;
   filter: brightness(250%);
